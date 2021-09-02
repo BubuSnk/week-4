@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+   int a,b,c,sum; 
+          
+    scanf("%d\n%d\n%d", &a,&b,&c);
+    if(a<0||b<0||c<0||a>30||b>30||c>40)
+        {printf("ERROR");
+         return 0;}
+    sum=a+b+c;
+    switch (sum)
+    {
+    case 80 ... 100:
+        printf("A");
+        break;
+    case 75 ... 79:
+        printf("B+");
+        break;
+    case 70 ... 74:
+        printf("B");
+        break;
+    case 65 ... 69:
+        printf("C+");
+        break;
+    case 60 ... 64:
+        printf("C");
+        break;
+    case 55 ... 59:
+        printf("D+");
+        break;
+    case 50 ... 54:
+        printf("D");
+        break;
+    default:
+        printf("F");
+        return 0;
+    }
+}
